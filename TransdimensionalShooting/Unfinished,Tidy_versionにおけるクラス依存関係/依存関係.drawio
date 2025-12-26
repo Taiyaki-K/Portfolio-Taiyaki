@@ -1,0 +1,443 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36" version="28.2.9">
+  <diagram name="ページ1" id="nZVUwIFtpjlEPs32zgL1">
+    <mxGraphModel dx="2253" dy="743" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="aFOqbn7RIw5kKWNp6X5d-41" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="xxiv8Oosxxk4KB6sZSsx-1" target="aFOqbn7RIw5kKWNp6X5d-38" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aFOqbn7RIw5kKWNp6X5d-42" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;実装&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="aFOqbn7RIw5kKWNp6X5d-41" vertex="1" connectable="0">
+          <mxGeometry x="0.0727" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xxiv8Oosxxk4KB6sZSsx-1" value="ObjectModeDual" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="685" y="1200" width="230" height="170" as="geometry">
+            <mxRectangle x="310" y="210" width="130" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xxiv8Oosxxk4KB6sZSsx-21" value="&lt;div style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;使用場面&lt;/font&gt;&lt;/div&gt;&lt;span style=&quot;&quot;&gt;・2Dと3Dをまとめる空オブジェクトRootに例外なく割り付ける。&lt;/span&gt;&lt;div style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;責務&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;・&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;2D/3D表示の切り替え&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;・2D/3D/Rootオブジェクトの削除&lt;/div&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;align=left;verticalAlign=top;size=20;" parent="xxiv8Oosxxk4KB6sZSsx-1" vertex="1">
+          <mxGeometry y="30" width="230" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="xxiv8Oosxxk4KB6sZSsx-23" value="PerspCamController" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="470" y="70" width="150" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="xxiv8Oosxxk4KB6sZSsx-27" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;使用場面&lt;/font&gt;&lt;div&gt;・MainPerspectiveCameraに割り付ける&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;責務&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font&gt;・カーソルの非表示&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font&gt;・PerspCamをマウスで動かす&lt;/font&gt;&lt;/div&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;size=15;align=left;verticalAlign=top;" parent="xxiv8Oosxxk4KB6sZSsx-23" vertex="1">
+          <mxGeometry y="26" width="150" height="124" as="geometry" />
+        </mxCell>
+        <mxCell id="xxiv8Oosxxk4KB6sZSsx-29" value="&amp;lt;&amp;lt;interface&amp;gt;&amp;gt;&lt;br&gt;IBeamInit" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1130" y="1670" width="180" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="xxiv8Oosxxk4KB6sZSsx-37" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;使用場面&lt;/font&gt;&lt;div&gt;&lt;font&gt;・インターフェース&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;責務&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;1&quot;&gt;・Beamを初期化する&lt;/font&gt;&lt;/div&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;size=15;verticalAlign=top;align=left;" parent="xxiv8Oosxxk4KB6sZSsx-29" vertex="1">
+          <mxGeometry y="26" width="180" height="104" as="geometry" />
+        </mxCell>
+        <mxCell id="xxiv8Oosxxk4KB6sZSsx-38" value="DoragonRootController" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="440" y="794" width="190" height="126" as="geometry" />
+        </mxCell>
+        <mxCell id="xxiv8Oosxxk4KB6sZSsx-42" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;使用場面&lt;/font&gt;&lt;div&gt;&lt;font&gt;・DoragonRootに張り付ける&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;責務&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;・ドラゴンのHPの管理&lt;/font&gt;&lt;/div&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;align=left;verticalAlign=top;size=18;" parent="xxiv8Oosxxk4KB6sZSsx-38" vertex="1">
+          <mxGeometry y="26" width="190" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="xxiv8Oosxxk4KB6sZSsx-43" value="HomingBullet3DController" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="150" y="1720" width="190" height="126" as="geometry" />
+        </mxCell>
+        <mxCell id="xxiv8Oosxxk4KB6sZSsx-44" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;使用場面&lt;/font&gt;&lt;div&gt;・HomingBullet3Dに張り付ける&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;責務&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;・HomingBullet3Dの動き、衝突を管理&lt;/font&gt;&lt;/div&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;align=left;verticalAlign=top;size=18;" parent="xxiv8Oosxxk4KB6sZSsx-43" vertex="1">
+          <mxGeometry y="26" width="190" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="7uDKOLwaA7xaOvg9xCc--13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="xxiv8Oosxxk4KB6sZSsx-45" target="aFOqbn7RIw5kKWNp6X5d-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7uDKOLwaA7xaOvg9xCc--15" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;HAS-A&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="7uDKOLwaA7xaOvg9xCc--13">
+          <mxGeometry x="-0.1489" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xxiv8Oosxxk4KB6sZSsx-45" value="HomingBulletRootController" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="340" y="1430" width="190" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="xxiv8Oosxxk4KB6sZSsx-46" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;使用場面&lt;/font&gt;&lt;div&gt;・HomingBulletRootに張り付ける&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;責務&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font&gt;・モード切替時に弾のy座標を0にする&lt;/font&gt;&lt;/div&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;align=left;verticalAlign=top;size=18;" parent="xxiv8Oosxxk4KB6sZSsx-45" vertex="1">
+          <mxGeometry y="26" width="190" height="84" as="geometry" />
+        </mxCell>
+        <mxCell id="xxiv8Oosxxk4KB6sZSsx-53" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;" parent="xxiv8Oosxxk4KB6sZSsx-45" source="xxiv8Oosxxk4KB6sZSsx-46" target="xxiv8Oosxxk4KB6sZSsx-46" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xxiv8Oosxxk4KB6sZSsx-47" value="Player2DController" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="990" y="1880" width="200" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="xxiv8Oosxxk4KB6sZSsx-48" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;使用場面&lt;/font&gt;&lt;div&gt;・Player2Dに張り付ける&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;責務&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font&gt;・プレイヤーから弾を発射する。&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font&gt;・プレイヤーの移動&lt;/font&gt;&lt;/div&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;align=left;verticalAlign=top;size=18;" parent="xxiv8Oosxxk4KB6sZSsx-47" vertex="1">
+          <mxGeometry y="26" width="200" height="104" as="geometry" />
+        </mxCell>
+        <mxCell id="xxiv8Oosxxk4KB6sZSsx-51" value="Player3DController" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1250" y="1880" width="200" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="xxiv8Oosxxk4KB6sZSsx-52" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;使用場面&lt;/font&gt;&lt;div&gt;・Player3Dに張り付ける&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;責務&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font&gt;・プレイヤーから弾を発射する。&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font&gt;・プレイヤーの移動&lt;/font&gt;&lt;/div&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;align=left;verticalAlign=top;size=18;" parent="xxiv8Oosxxk4KB6sZSsx-51" vertex="1">
+          <mxGeometry y="26" width="200" height="104" as="geometry" />
+        </mxCell>
+        <mxCell id="1HymE-JIdCdxF9qKChMR-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="xxiv8Oosxxk4KB6sZSsx-54" target="xxiv8Oosxxk4KB6sZSsx-1" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="1HymE-JIdCdxF9qKChMR-19" value="HAS-A" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=20;" parent="1HymE-JIdCdxF9qKChMR-17" vertex="1" connectable="0">
+          <mxGeometry x="-0.175" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aFOqbn7RIw5kKWNp6X5d-73" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="xxiv8Oosxxk4KB6sZSsx-54" target="aFOqbn7RIw5kKWNp6X5d-55" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="847" y="2070" />
+              <mxPoint x="1690" y="2070" />
+              <mxPoint x="1690" y="1081" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aFOqbn7RIw5kKWNp6X5d-74" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;実装&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="aFOqbn7RIw5kKWNp6X5d-73" vertex="1" connectable="0">
+          <mxGeometry x="0.4975" y="-1" relative="1" as="geometry">
+            <mxPoint y="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xxiv8Oosxxk4KB6sZSsx-54" value="PlayerRootController" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="697.5" y="1846" width="200" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="xxiv8Oosxxk4KB6sZSsx-55" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;使用場面&lt;/font&gt;&lt;div&gt;・PlayerRootに張り付ける&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;責務&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font&gt;・モード切替時にy座標を0にする&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font&gt;・プレイヤーの死亡時の演出を再生&lt;/font&gt;&lt;/div&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;align=left;verticalAlign=top;size=18;" parent="xxiv8Oosxxk4KB6sZSsx-54" vertex="1">
+          <mxGeometry y="26" width="200" height="104" as="geometry" />
+        </mxCell>
+        <mxCell id="1HymE-JIdCdxF9qKChMR-1" value="EventBus" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="720" y="60" width="230" height="170" as="geometry">
+            <mxRectangle x="310" y="210" width="130" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1HymE-JIdCdxF9qKChMR-2" value="&lt;div style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;使用場面&lt;/font&gt;&lt;/div&gt;&lt;span style=&quot;&quot;&gt;・静的クラス。静的にアクセスする。&lt;/span&gt;&lt;div style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;責務&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;・Eventの仲介。&lt;/div&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;align=left;verticalAlign=top;size=20;" parent="1HymE-JIdCdxF9qKChMR-1" vertex="1">
+          <mxGeometry y="30" width="230" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="1HymE-JIdCdxF9qKChMR-4" value="GameModeManager" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="190" y="60" width="230" height="170" as="geometry">
+            <mxRectangle x="310" y="210" width="130" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1HymE-JIdCdxF9qKChMR-5" value="&lt;div style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;使用場面&lt;/font&gt;&lt;/div&gt;&lt;span style=&quot;&quot;&gt;・シングルトン。&lt;/span&gt;&lt;div style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;責務&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;・モードの切り替え、モード切替イベントの発行&lt;/div&gt;&lt;div style=&quot;&quot;&gt;・Player2D,Player3DのTransformの保持&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;font style=&quot;color: light-dark(rgb(0, 0, 0), rgb(255, 37, 37));&quot;&gt;変更しないと考えて、依存線は省略&lt;/font&gt;&lt;/div&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;align=left;verticalAlign=top;size=20;" parent="1HymE-JIdCdxF9qKChMR-4" vertex="1">
+          <mxGeometry y="30" width="230" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="1HymE-JIdCdxF9qKChMR-6" value="CameraSwithcer" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1320" y="60" width="230" height="170" as="geometry">
+            <mxRectangle x="310" y="210" width="130" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1HymE-JIdCdxF9qKChMR-7" value="&lt;div style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;使用場面&lt;/font&gt;&lt;/div&gt;&lt;span style=&quot;&quot;&gt;・空のオブジェクトに割り付ける。&lt;/span&gt;&lt;div style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;責務&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;・モード切替時にカメラを切り替える。&lt;/div&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;align=left;verticalAlign=top;size=20;" parent="1HymE-JIdCdxF9qKChMR-6" vertex="1">
+          <mxGeometry y="30" width="230" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="1HymE-JIdCdxF9qKChMR-8" value="GameManager" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="710" y="290" width="230" height="170" as="geometry">
+            <mxRectangle x="310" y="210" width="130" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1HymE-JIdCdxF9qKChMR-9" value="&lt;div style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;使用場面&lt;/font&gt;&lt;/div&gt;&lt;span style=&quot;&quot;&gt;・シングルトン。&lt;/span&gt;&lt;div style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;責務&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;・ゲームの開始、終了、リトライ。&lt;/div&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;align=left;verticalAlign=top;size=20;" parent="1HymE-JIdCdxF9qKChMR-8" vertex="1">
+          <mxGeometry y="30" width="230" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="1HymE-JIdCdxF9qKChMR-10" value="PlayerInputManager" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1040" y="60" width="230" height="170" as="geometry">
+            <mxRectangle x="310" y="210" width="130" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1HymE-JIdCdxF9qKChMR-11" value="&lt;div style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;使用場面&lt;/font&gt;&lt;/div&gt;&lt;span style=&quot;&quot;&gt;・空のオブジェクトに割り付ける&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;font-size: 14px; background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;責務&lt;/span&gt;&lt;div style=&quot;&quot;&gt;・プレイヤーの入力を受け付けて、EventBusを発行&lt;/div&gt;&lt;/div&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;align=left;verticalAlign=top;size=20;" parent="1HymE-JIdCdxF9qKChMR-10" vertex="1">
+          <mxGeometry y="30" width="230" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="1HymE-JIdCdxF9qKChMR-12" value="TimeManager" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="414" y="300" width="195" height="120" as="geometry">
+            <mxRectangle x="702.5" y="1650" width="130" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1HymE-JIdCdxF9qKChMR-13" value="&lt;div style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;使用場面&lt;/font&gt;&lt;/div&gt;&lt;span style=&quot;&quot;&gt;・空のオブジェクトに割り付ける&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;font-size: 14px; background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;責務&lt;/span&gt;&lt;div style=&quot;&quot;&gt;・ゲームのtimeScaleを設定&lt;/div&gt;&lt;/div&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;align=left;verticalAlign=top;size=20;" parent="1HymE-JIdCdxF9qKChMR-12" vertex="1">
+          <mxGeometry y="30" width="195" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="1HymE-JIdCdxF9qKChMR-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="1HymE-JIdCdxF9qKChMR-21" target="xxiv8Oosxxk4KB6sZSsx-1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1240" y="1285" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1HymE-JIdCdxF9qKChMR-28" value="HAS-A" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=20;" parent="1HymE-JIdCdxF9qKChMR-23" vertex="1" connectable="0">
+          <mxGeometry x="0.2571" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1HymE-JIdCdxF9qKChMR-21" value="BeamRootController" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1130" y="1450" width="180" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="1HymE-JIdCdxF9qKChMR-22" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;使用場面&lt;/font&gt;&lt;div&gt;&lt;font&gt;・BeamRootControllerの基底&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font&gt;・Player2D,3Dにおいて、ビームの初期化&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;責務&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;&quot;&gt;&lt;font&gt;・モード切替時のBeamの挙動の処&lt;/font&gt;&lt;span style=&quot;font-size: 11px;&quot;&gt;理&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 11px;&quot;&gt;・3Dオブジェクトを移動させる&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;size=15;verticalAlign=top;align=left;" parent="1HymE-JIdCdxF9qKChMR-21" vertex="1">
+          <mxGeometry y="26" width="180" height="134" as="geometry" />
+        </mxCell>
+        <mxCell id="1HymE-JIdCdxF9qKChMR-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="xxiv8Oosxxk4KB6sZSsx-45" target="xxiv8Oosxxk4KB6sZSsx-21" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="460" y="1300" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1HymE-JIdCdxF9qKChMR-27" value="HAS-A" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=20;" parent="1HymE-JIdCdxF9qKChMR-25" vertex="1" connectable="0">
+          <mxGeometry x="0.1913" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1HymE-JIdCdxF9qKChMR-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="1HymE-JIdCdxF9qKChMR-22" target="xxiv8Oosxxk4KB6sZSsx-29" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="1HymE-JIdCdxF9qKChMR-33" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;実装&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="1HymE-JIdCdxF9qKChMR-29" vertex="1" connectable="0">
+          <mxGeometry x="0.0159" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1HymE-JIdCdxF9qKChMR-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.833;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="xxiv8Oosxxk4KB6sZSsx-52" target="xxiv8Oosxxk4KB6sZSsx-37" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="1HymE-JIdCdxF9qKChMR-39" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;USE&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="1HymE-JIdCdxF9qKChMR-36" vertex="1" connectable="0">
+          <mxGeometry x="0.0009" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1HymE-JIdCdxF9qKChMR-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.25;entryY=1;entryDx=0;entryDy=0;" parent="1" source="xxiv8Oosxxk4KB6sZSsx-48" target="xxiv8Oosxxk4KB6sZSsx-29" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="1HymE-JIdCdxF9qKChMR-38" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;USE&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="1HymE-JIdCdxF9qKChMR-37" vertex="1" connectable="0">
+          <mxGeometry x="0.1514" y="4" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aFOqbn7RIw5kKWNp6X5d-1" value="HomingBullet2DController" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="150" y="1882" width="190" height="126" as="geometry" />
+        </mxCell>
+        <mxCell id="aFOqbn7RIw5kKWNp6X5d-2" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;使用場面&lt;/font&gt;&lt;div&gt;・HomingBullet2Dに張り付ける&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;責務&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;・HomingBullet2Dの動き、衝突を管理&lt;/font&gt;&lt;/div&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;align=left;verticalAlign=top;size=18;" parent="aFOqbn7RIw5kKWNp6X5d-1" vertex="1">
+          <mxGeometry y="26" width="190" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="aFOqbn7RIw5kKWNp6X5d-6" value="&amp;lt;&amp;lt;Interface&amp;gt;&amp;gt;&lt;br&gt;ISetHomingTarget" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-50" y="1440" width="190" height="126" as="geometry" />
+        </mxCell>
+        <mxCell id="aFOqbn7RIw5kKWNp6X5d-7" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;使用場面&lt;/font&gt;&lt;div&gt;・インターフェース&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;責務&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;・HomingBullet生成時にターゲットを設定する&lt;/font&gt;&lt;/div&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;align=left;verticalAlign=top;size=18;" parent="aFOqbn7RIw5kKWNp6X5d-6" vertex="1">
+          <mxGeometry y="26" width="190" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="aFOqbn7RIw5kKWNp6X5d-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="xxiv8Oosxxk4KB6sZSsx-46" target="aFOqbn7RIw5kKWNp6X5d-7" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="339.98" y="1499" as="sourcePoint" />
+            <mxPoint x="160" y="1497" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="240" y="1498" />
+              <mxPoint x="240" y="1500" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aFOqbn7RIw5kKWNp6X5d-9" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;実装&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="aFOqbn7RIw5kKWNp6X5d-8" vertex="1" connectable="0">
+          <mxGeometry x="0.0048" relative="1" as="geometry">
+            <mxPoint x="1" y="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aFOqbn7RIw5kKWNp6X5d-20" value="Doragon2DController" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="240" y="630" width="190" height="126" as="geometry" />
+        </mxCell>
+        <mxCell id="aFOqbn7RIw5kKWNp6X5d-21" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;使用場面&lt;/font&gt;&lt;div&gt;&lt;font&gt;・Doragon2Dに張り付ける&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;責務&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;・ドラゴンの当たり判定の管理&lt;/font&gt;&lt;/div&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;align=left;verticalAlign=top;size=18;" parent="aFOqbn7RIw5kKWNp6X5d-20" vertex="1">
+          <mxGeometry y="26" width="190" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="aFOqbn7RIw5kKWNp6X5d-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.315;entryY=0.992;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="aFOqbn7RIw5kKWNp6X5d-24" target="aFOqbn7RIw5kKWNp6X5d-27" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="80" y="1080" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="-55" y="1083" />
+              <mxPoint x="90" y="1083" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aFOqbn7RIw5kKWNp6X5d-24" value="BurstBullet3DController" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-150" y="1120" width="190" height="126" as="geometry" />
+        </mxCell>
+        <mxCell id="aFOqbn7RIw5kKWNp6X5d-25" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;使用場面&lt;/font&gt;&lt;div&gt;&lt;font&gt;・BurstBullet3Dに張り付ける&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;責務&lt;/span&gt;&lt;br&gt;&lt;font&gt;・BurstBullet3Dの挙動管理&lt;/font&gt;&lt;/div&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;align=left;verticalAlign=top;size=18;" parent="aFOqbn7RIw5kKWNp6X5d-24" vertex="1">
+          <mxGeometry y="26" width="190" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="aFOqbn7RIw5kKWNp6X5d-26" value="BurstBulletRootController" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="30" y="920" width="190" height="126" as="geometry" />
+        </mxCell>
+        <mxCell id="aFOqbn7RIw5kKWNp6X5d-27" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;使用場面&lt;/font&gt;&lt;div&gt;&lt;font&gt;・BurstBulletRootに張り付ける&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;責務&lt;/span&gt;&lt;br&gt;&lt;font&gt;・Burst時の処理&lt;/font&gt;&lt;/div&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;align=left;verticalAlign=top;size=18;" parent="aFOqbn7RIw5kKWNp6X5d-26" vertex="1">
+          <mxGeometry y="26" width="190" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="aFOqbn7RIw5kKWNp6X5d-29" value="Beam2DController" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1430" y="1410" width="180" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="aFOqbn7RIw5kKWNp6X5d-30" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;使用場面&lt;/font&gt;&lt;div&gt;&lt;font&gt;・Beam2Dに張り付ける&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;責務&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;font&gt;・Beam2Dを動かす&lt;/font&gt;&lt;/div&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;size=15;verticalAlign=top;align=left;" parent="aFOqbn7RIw5kKWNp6X5d-29" vertex="1">
+          <mxGeometry y="26" width="180" height="104" as="geometry" />
+        </mxCell>
+        <mxCell id="aFOqbn7RIw5kKWNp6X5d-31" value="Beam3DController" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1430" y="1566" width="180" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="aFOqbn7RIw5kKWNp6X5d-32" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;使用場面&lt;/font&gt;&lt;div&gt;&lt;font&gt;・Beam3Dに張り付ける&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;責務&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;font&gt;・Beam3Dを動かす&lt;/font&gt;&lt;/div&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;size=15;verticalAlign=top;align=left;" parent="aFOqbn7RIw5kKWNp6X5d-31" vertex="1">
+          <mxGeometry y="26" width="180" height="104" as="geometry" />
+        </mxCell>
+        <mxCell id="aFOqbn7RIw5kKWNp6X5d-33" value="BurstBullet2DController" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="230" y="1120" width="190" height="126" as="geometry" />
+        </mxCell>
+        <mxCell id="aFOqbn7RIw5kKWNp6X5d-34" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;使用場面&lt;/font&gt;&lt;div&gt;&lt;font&gt;・BurstBullet2Dに張り付ける&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;責務&lt;/span&gt;&lt;br&gt;&lt;font&gt;・BurstBullet2Dの挙動管理&lt;/font&gt;&lt;/div&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;align=left;verticalAlign=top;size=18;" parent="aFOqbn7RIw5kKWNp6X5d-33" vertex="1">
+          <mxGeometry y="26" width="190" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="aFOqbn7RIw5kKWNp6X5d-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.685;entryY=0.994;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" target="aFOqbn7RIw5kKWNp6X5d-27" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="325" y="1120" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="325" y="1120" />
+              <mxPoint x="325" y="1080" />
+              <mxPoint x="160" y="1080" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aFOqbn7RIw5kKWNp6X5d-36" value="UIManager" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1030" y="290" width="230" height="170" as="geometry">
+            <mxRectangle x="310" y="210" width="130" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aFOqbn7RIw5kKWNp6X5d-37" value="&lt;div style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;使用場面&lt;/font&gt;&lt;/div&gt;&lt;span style=&quot;&quot;&gt;・空のオブジェクトに張り付ける&lt;/span&gt;&lt;div style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;責務&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;・UIの表示、管理&lt;/div&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;align=left;verticalAlign=top;size=20;" parent="aFOqbn7RIw5kKWNp6X5d-36" vertex="1">
+          <mxGeometry y="30" width="230" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="aFOqbn7RIw5kKWNp6X5d-38" value="&amp;lt;&amp;lt;interface&amp;gt;&amp;gt;&lt;br&gt;IDestructible" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="710" y="1006" width="180" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="aFOqbn7RIw5kKWNp6X5d-39" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;使用場面&lt;/font&gt;&lt;div&gt;&lt;font&gt;・インターフェース&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;責務&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;font&gt;・系列のオブジェクトを破壊する。&lt;/font&gt;&lt;/div&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;size=15;verticalAlign=top;align=left;" parent="aFOqbn7RIw5kKWNp6X5d-38" vertex="1">
+          <mxGeometry y="26" width="180" height="104" as="geometry" />
+        </mxCell>
+        <mxCell id="aFOqbn7RIw5kKWNp6X5d-57" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="aFOqbn7RIw5kKWNp6X5d-43" target="aFOqbn7RIw5kKWNp6X5d-55" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aFOqbn7RIw5kKWNp6X5d-64" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;USE&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="aFOqbn7RIw5kKWNp6X5d-57" vertex="1" connectable="0">
+          <mxGeometry x="-0.2902" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aFOqbn7RIw5kKWNp6X5d-43" value="EnemyBulletHandler" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1050" y="1006" width="190" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="aFOqbn7RIw5kKWNp6X5d-44" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;使用場面&lt;/font&gt;&lt;div&gt;&lt;font&gt;・敵の銃弾に張り付ける。DualModeなら2Dと3Dオブジェクトにそれぞれ。&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;責務&lt;/span&gt;&lt;br&gt;&lt;font&gt;・衝突時の処理&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font&gt;・LifeTimeで削除&lt;/font&gt;&lt;/div&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;align=left;verticalAlign=top;size=18;" parent="aFOqbn7RIw5kKWNp6X5d-43" vertex="1">
+          <mxGeometry y="26" width="190" height="124" as="geometry" />
+        </mxCell>
+        <mxCell id="aFOqbn7RIw5kKWNp6X5d-45" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;" parent="aFOqbn7RIw5kKWNp6X5d-43" source="aFOqbn7RIw5kKWNp6X5d-44" target="aFOqbn7RIw5kKWNp6X5d-44" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aFOqbn7RIw5kKWNp6X5d-46" value="ObjectModeSingle" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="710" y="730" width="202.5" height="170" as="geometry">
+            <mxRectangle x="310" y="210" width="130" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aFOqbn7RIw5kKWNp6X5d-47" value="&lt;div style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;使用場面&lt;/font&gt;&lt;/div&gt;・2Dまたは3Dでしか表示されないオブジェクトに割り付ける&lt;br&gt;&lt;div style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;責務&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;・別モードの時、非表示、非接触にする。&lt;/div&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;align=left;verticalAlign=top;size=20;" parent="aFOqbn7RIw5kKWNp6X5d-46" vertex="1">
+          <mxGeometry y="30" width="202.5" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="aFOqbn7RIw5kKWNp6X5d-48" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.565;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="aFOqbn7RIw5kKWNp6X5d-46" target="aFOqbn7RIw5kKWNp6X5d-38" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aFOqbn7RIw5kKWNp6X5d-49" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;実装&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="aFOqbn7RIw5kKWNp6X5d-48" vertex="1" connectable="0">
+          <mxGeometry x="0.0039" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aFOqbn7RIw5kKWNp6X5d-50" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.982;entryY=0.508;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="aFOqbn7RIw5kKWNp6X5d-43" target="aFOqbn7RIw5kKWNp6X5d-39" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aFOqbn7RIw5kKWNp6X5d-54" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;HAS-A&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="aFOqbn7RIw5kKWNp6X5d-50" vertex="1" connectable="0">
+          <mxGeometry x="-0.0431" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aFOqbn7RIw5kKWNp6X5d-55" value="&amp;lt;&amp;lt;interface&amp;gt;&amp;gt;&lt;br&gt;IKillable" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1345" y="1016" width="180" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="aFOqbn7RIw5kKWNp6X5d-56" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;使用場面&lt;/font&gt;&lt;div&gt;&lt;font&gt;・インターフェース&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;責務&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;font&gt;・自分が死亡するイベントを発行する&lt;/font&gt;&lt;/div&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;size=15;verticalAlign=top;align=left;" parent="aFOqbn7RIw5kKWNp6X5d-55" vertex="1">
+          <mxGeometry y="26" width="180" height="104" as="geometry" />
+        </mxCell>
+        <mxCell id="aFOqbn7RIw5kKWNp6X5d-58" value="&amp;lt;&amp;lt;interface&amp;gt;&amp;gt;&lt;br&gt;IDamageable" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1345" y="830" width="180" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="aFOqbn7RIw5kKWNp6X5d-59" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;使用場面&lt;/font&gt;&lt;div&gt;&lt;font&gt;・インターフェース&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;責務&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;font&gt;・HPを減らす&lt;/font&gt;&lt;/div&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;size=15;verticalAlign=top;align=left;" parent="aFOqbn7RIw5kKWNp6X5d-58" vertex="1">
+          <mxGeometry y="26" width="180" height="104" as="geometry" />
+        </mxCell>
+        <mxCell id="aFOqbn7RIw5kKWNp6X5d-62" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.25;entryDx=0;entryDy=0;" parent="1" source="aFOqbn7RIw5kKWNp6X5d-60" target="aFOqbn7RIw5kKWNp6X5d-38" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aFOqbn7RIw5kKWNp6X5d-63" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;HAS-A&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="aFOqbn7RIw5kKWNp6X5d-62" vertex="1" connectable="0">
+          <mxGeometry x="0.0005" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aFOqbn7RIw5kKWNp6X5d-65" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="aFOqbn7RIw5kKWNp6X5d-60" target="aFOqbn7RIw5kKWNp6X5d-58" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aFOqbn7RIw5kKWNp6X5d-66" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;USE&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="aFOqbn7RIw5kKWNp6X5d-65" vertex="1" connectable="0">
+          <mxGeometry x="-0.1742" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aFOqbn7RIw5kKWNp6X5d-60" value="PlayerBulletHandler" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1055" y="830" width="180" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="aFOqbn7RIw5kKWNp6X5d-61" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;使用場面&lt;/font&gt;&lt;div&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;・&lt;/span&gt;&lt;font&gt;Playerの銃弾に張り付ける。&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 14px; background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;責務&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;font&gt;・衝突時の処理&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font&gt;・LifeTimeで削除&lt;/font&gt;&lt;/div&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;size=15;verticalAlign=top;align=left;" parent="aFOqbn7RIw5kKWNp6X5d-60" vertex="1">
+          <mxGeometry y="26" width="180" height="104" as="geometry" />
+        </mxCell>
+        <mxCell id="aFOqbn7RIw5kKWNp6X5d-67" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="xxiv8Oosxxk4KB6sZSsx-38" target="aFOqbn7RIw5kKWNp6X5d-39" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="535" y="1084" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aFOqbn7RIw5kKWNp6X5d-68" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;HAS-A&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="aFOqbn7RIw5kKWNp6X5d-67" vertex="1" connectable="0">
+          <mxGeometry x="-0.3472" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aFOqbn7RIw5kKWNp6X5d-70" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.546;entryY=-0.004;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="xxiv8Oosxxk4KB6sZSsx-38" target="aFOqbn7RIw5kKWNp6X5d-58" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="535" y="620" />
+              <mxPoint x="1443" y="620" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aFOqbn7RIw5kKWNp6X5d-71" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;実装&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="aFOqbn7RIw5kKWNp6X5d-70" vertex="1" connectable="0">
+          <mxGeometry x="-0.0057" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7uDKOLwaA7xaOvg9xCc--1" value="ExplosionSpawner" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-280" y="360" width="190" height="126" as="geometry" />
+        </mxCell>
+        <mxCell id="7uDKOLwaA7xaOvg9xCc--2" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;使用場面&lt;/font&gt;&lt;div&gt;&lt;font&gt;・空のオブジェクトに張り付ける。&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;責務&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font&gt;・空のオブジェクトの地点から爆発のように弾を発生させる。&lt;/font&gt;&lt;/div&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;align=left;verticalAlign=top;size=18;" vertex="1" parent="7uDKOLwaA7xaOvg9xCc--1">
+          <mxGeometry y="26" width="190" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="7uDKOLwaA7xaOvg9xCc--3" value="ForwardBulletMixController" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-560" y="360" width="210" height="126" as="geometry" />
+        </mxCell>
+        <mxCell id="7uDKOLwaA7xaOvg9xCc--4" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;使用場面&lt;/font&gt;&lt;div&gt;&lt;font&gt;・2D/3Dの弾の実体につける。&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;責務&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font&gt;・前(transform.up)に等速直線運動させる。&lt;/font&gt;&lt;/div&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;align=left;verticalAlign=top;size=18;" vertex="1" parent="7uDKOLwaA7xaOvg9xCc--3">
+          <mxGeometry y="26" width="210" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="7uDKOLwaA7xaOvg9xCc--5" value="SineWaveBulletMixController" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-560" y="522" width="190" height="126" as="geometry" />
+        </mxCell>
+        <mxCell id="7uDKOLwaA7xaOvg9xCc--6" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;使用場面&lt;/font&gt;&lt;div&gt;&lt;font&gt;・&lt;/font&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;2D/3Dの弾の実体につける。&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;責務&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font&gt;・&lt;/font&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;前(transform.up)にSIne波運動させる。&lt;/span&gt;&lt;/div&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;align=left;verticalAlign=top;size=18;" vertex="1" parent="7uDKOLwaA7xaOvg9xCc--5">
+          <mxGeometry y="26" width="190" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="7uDKOLwaA7xaOvg9xCc--7" value="Constant3DSpawner" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-320" y="522" width="190" height="126" as="geometry" />
+        </mxCell>
+        <mxCell id="7uDKOLwaA7xaOvg9xCc--8" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;使用場面&lt;/font&gt;&lt;div&gt;&lt;font&gt;・空のオブジェクトに張り付ける。&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;責務&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font&gt;・3D弾を設定した方向に生成する。&lt;/font&gt;&lt;/div&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;align=left;verticalAlign=top;size=18;" vertex="1" parent="7uDKOLwaA7xaOvg9xCc--7">
+          <mxGeometry y="26" width="190" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="7uDKOLwaA7xaOvg9xCc--10" value="ConstantMixSpawner" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-330" y="680" width="190" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="7uDKOLwaA7xaOvg9xCc--11" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;使用場面&lt;/font&gt;&lt;div&gt;&lt;font&gt;・空のオブジェクトに&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font&gt;張り付ける。&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;責務&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font&gt;・弾を設定した方向に生成する。XY平面のみを動き、2D弾、3D弾の両方を生成&lt;/font&gt;&lt;/div&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;align=left;verticalAlign=top;size=18;" vertex="1" parent="7uDKOLwaA7xaOvg9xCc--10">
+          <mxGeometry y="26" width="190" height="124" as="geometry" />
+        </mxCell>
+        <mxCell id="7uDKOLwaA7xaOvg9xCc--12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="xxiv8Oosxxk4KB6sZSsx-46" target="xxiv8Oosxxk4KB6sZSsx-43">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7uDKOLwaA7xaOvg9xCc--14" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;HAS-A&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="7uDKOLwaA7xaOvg9xCc--12">
+          <mxGeometry x="-0.0162" y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
