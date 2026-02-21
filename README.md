@@ -18,8 +18,8 @@ Taiyakiのポートフォリオです。
 ## 権利表記
 The MIT License (MIT)
 
-UniTask：Copyright (c) 2019 Yoshifumi Kawai / Cysharp, Inc.  
-AudioManager：Copyright (c) 2019 Kan Kikuchi
+Copyright (c) 2019 Yoshifumi Kawai / Cysharp, Inc.  
+Copyright (c) 2019 Kan Kikuchi
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
